@@ -1,0 +1,8 @@
+all:
+	g++ -std=c++11 -c token.cpp lexer.cpp parser.cpp TreeStandardizer.cpp Control.cpp Environment.cpp CSEMachine.cpp main.cpp
+	g++ -o ./myrpal token.o lexer.o parser.o TreeStandardizer.o Control.o Environment.o CSEMachine.o main.o
+	./myrpal input.txt
+
+
+
+
